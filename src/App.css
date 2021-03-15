@@ -1,5 +1,5 @@
   
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script&family=Open+Sans:wght@400;700&display=swap');
 
 :root {
   --primary-color: #da5c5c;
@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  font-family: 'Akaya Telivigala', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
