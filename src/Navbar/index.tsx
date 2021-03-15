@@ -5,7 +5,7 @@ function Navbar() {
     return(
         <nav className="main-navbar">
             <Logo />
-            <a href="home" className="logo-text">Live Teachers</a>
+            <a href="home" className="logo-text">LiveTeachers.com</a>
         </nav>
     )
 }
