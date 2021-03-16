@@ -1,6 +1,7 @@
 import './styles.css';
 import { ReactComponent as MainImage } from './main.svg';
 import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -22,7 +23,9 @@ function Home() {
                             Depois é só confirmar os seus dados, <br /> efetuar pagamento e pronto! <br /> Seu aprendizado com qualidade já tem hora marcada!
                             </ol>
                         </h3>
-                        <a href="classes" className="home-btn-classes">Reservar Aula</a>
+                        <Link to="/classes" className="home-btn-classes">
+                            Reservar Aula
+                        </Link>
                         <div className="home-image">
                             <MainImage />
                         </div>
