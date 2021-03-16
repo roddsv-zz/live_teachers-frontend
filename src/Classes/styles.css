@@ -50,20 +50,20 @@
   margin-right: 10px;
 }
 
-.orders-list-container {
+.classes-list-container {
   display: flex;
   justify-content: center;
 }
 
-.orders-list-items {
-  width: 70%;
+.classes-list-items {
+  width: 25%;
   display: grid;
   grid-template-columns: repeat(auto-fill, 235px);
   grid-gap: 20px 15px;
   justify-content: space-between;
 }
 
-.order-card-container {
+.classes-card-container {
   background-color: #FFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -71,38 +71,39 @@
   cursor: pointer;
 }
 
-.order-card-container.selected {
+.classes-card-container.selected {
   border: 4px solid #008E5B;
   box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-.order-card-container:hover {
+.class-card-container:hover {
   transform: scale(1.01);
 }
 
-.order-card-title {
+.class-card-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.015em;
   color: var(--primary-color);
-  text-align: center;
+  text-align: left;
 }
 
-.order-card-container.selected .order-card-title {
+.class-card-container.selected .class-card-title {
   color: #008E5B;
 }
 
-.order-card-image {
+.class-card-image {
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 35%;
+  height: 450px;
 }
 
-.order-card-price {
+.class-card-price {
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
@@ -111,24 +112,24 @@
   text-align: left;
 }
 
-.order-card-container.selected .order-card-price {
+.class-card-container.selected .class-card-price {
   color: #008E5B;
 }
 
-.order-card-description {
+.class-card-description {
   border-top: 1px solid #E6E6E6;
   margin-top: 15px;
   padding-top: 15px;
 }
 
-.order-card-description h3 {
+.class-card-description h3 {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.015em;
   color: var(--secondary-color);
 }
 
-.order-card-description p {
+.class-card-description p {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -137,12 +138,12 @@
   color: var(--secondary-color);
 }
 
-.order-location-container {
+.class-location-container {
   display: flex;
   justify-content: center;
 }
 
-.order-location-content {
+.class-location-content {
   width: 70%;
   margin: 30px 0 120px 0;
   padding: 20px 0;
@@ -175,7 +176,7 @@
   z-index: 0;
 }
 
-.order-location-title {
+.class-location-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -184,13 +185,13 @@
   color: var(--secondary-color);
 }
 
-.order-summary-container {
+.class-summary-container {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.order-summary-content {
+.class-summary-content {
   width: calc(70% - 40px);
   display: flex;
   justify-content: space-between;
@@ -219,7 +220,7 @@
   margin-right: 5px;
 }
 
-.order-summary-total {
+.class-summary-total {
   font-weight: normal;
   font-size: 14px;
   line-height: 15px;
@@ -228,7 +229,7 @@
   display: block;
 }
 
-.order-summary-price {
+.class-summary-price {
   font-weight: bold;
   font-size: 18px;
   line-height: 19px;
@@ -237,7 +238,7 @@
   margin-right: 5px;
 }
 
-.order-summary-make-order {
+.class-summary-make-order {
   width: 220px;
   height: 45px;
   background: #FFF;
@@ -252,42 +253,42 @@
   cursor: pointer;
 }
 
-.order-summary-make-order:focus {
+.class-summary-make-order:focus {
   outline: none;
 }
 
-.order-summary-make-order:hover {
+.class-summary-make-order:hover {
   background-color: #fcf2f2;
   transform: scale(1.01);
 }
 
 @media only screen and (max-width: 768px) {
-  .orders-steps-content {
+  .instructions-content {
     display: flex;
     flex-direction: column;
     padding: 0;
     width: 90%;
   }
 
-  .steps-items {
+  .instructions-items {
     padding: 0
   }
 
-  .order-location-content {
+  .class-location-content {
     width: 90%;
   }
 
-  .order-location-container {
+  .class-location-container {
     margin-bottom: 20px;
   }
 
-  .order-summary-content {
+  .class-summary-content {
     width: 80%;
     display: flex;
     flex-direction: column;
   }
 
-  .order-summary-make-order {
+  .class-summary-make-order {
     margin-top: 15px;
     width: 100%;
   }
