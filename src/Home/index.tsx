@@ -1,8 +1,10 @@
 import './styles.css';
-import { ReactComponent as MainImage } from './main.svg'
+import { ReactComponent as MainImage } from './main.svg';
+import Footer from '../Footer';
 
 function Home() {
     return (
+    <>
         <div>
             <div className="home-container">
                 <div className="home-content">
@@ -11,15 +13,14 @@ function Home() {
                         </h1>
                         <h3 className='home-subtitle'>
                             É muito fácil apender com LiveTeachers.com:
-                        <ol>
+                            <ol>
                                 <li>Clique no botão abaixo.</li>
                                 <li>Ao abrir a nova página, escolha a matéria que deseja estudar.</li>
                                 <li>Escolha o seu instrutor.</li>
                                 <li>Escolha o horário e a data.</li>
                                 <br />
-
-                        Depois é só confirmar os seus dados, <br /> efetuar pagamento e pronto! <br /> Seu aprendizado com qualidade já tem hora marcada!
-                        </ol>
+                            Depois é só confirmar os seus dados, <br /> efetuar pagamento e pronto! <br /> Seu aprendizado com qualidade já tem hora marcada!
+                            </ol>
                         </h3>
                         <a href="classes" className="home-btn-classes">Reservar Aula</a>
                         <div className="home-image">
@@ -29,6 +30,8 @@ function Home() {
                 </div>
             </div>
         </div>
+        <Footer />
+    </>
     );
 }
 
