@@ -1,22 +1,18 @@
+import { formatPrice } from './helpers';
 import { Teacher } from './types';
 
 type Props = {
     teacher: Teacher;
+    onSelectTeacher: (teacher: Teacher) => void;
+    isSelected: boolean;
 }
 
-function formatPrice(price: number) {
-    const formatter = new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL',
-        minimumFractionDigits: 2
-    });
-
-    return formatter.format(price);
-}
-
-function TeacherCard({ teacher }: Props){
+function TeacherCard({ teacher, onSelectTeacher, isSelected }: Props){
     return(
-        <div className="class-card-container">
+        <div 
+        className={`class-card-container ${isSelected ? 'selected': ''}`}
+        onClick={() => onSelectTeacher(teacher)}
+        >
             <h3 className="class-card-title">
                 <p>
                     {teacher.name}

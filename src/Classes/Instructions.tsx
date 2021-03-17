@@ -8,15 +8,11 @@ function Instructions(){
                 <ul className="instructions-items">
                     <li>
                         <span className="instructions-number">1. </span>
-                        Selecione a matéria
+                        Selecione o professor de acordo com a matéria desejada
                     </li>
                     <li>
                         <span className="instructions-number">2. </span>
-                        Selecione o professor
-                    </li>
-                    <li>
-                        <span className="instructions-number">3. </span>
-                        Selecione a matéria
+                        Confirme seus dados
                     </li>
                 </ul>
             </div>

@@ -6,3 +6,12 @@ export type Teacher = {
     hourPrice: number,
     imageUri: string;
 }
+
+type TeacherId = {
+    id: number;
+}
+
+export type ClassPayload = {
+    teachers: TeacherId[];
+}
+
